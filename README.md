@@ -13,7 +13,32 @@ Hello, World! 👋<br><br>I'm Alamanda Balu Karthik, a computer science graduate
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=Karthi-1211&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 
 ### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+<div id="quote-box">
+  <p id="quote" style="font-size: 1.2rem; color: #f4f4f9; background: #333; padding: 10px; border-radius: 5px; display: inline-block;"></p>
+</div>
+
+<script>
+  // Array of random quotes
+  const quotes = [
+    "Code is like humor. When you have to explain it, it’s bad. – Cory House",
+    "In order to be irreplaceable, one must always be different. – Coco Chanel",
+    "Experience is the name everyone gives to their mistakes. – Oscar Wilde",
+    "Knowledge is power. – Francis Bacon",
+    "Sometimes it pays to stay in bed on Monday, rather than spending the rest of the week debugging Monday’s code. – Dan Salomon",
+    "Java is to JavaScript what car is to Carpet. – Chris Heilmann",
+    "Ruby is rubbish! PHP is phpantastic! – Nikita Popov",
+    "Code never lies, comments sometimes do. – Ron Jeffries"
+  ];
+
+  // Function to display a random quote
+  function displayRandomQuote() {
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    document.getElementById("quote").innerText = quotes[randomIndex];
+  }
+
+  // Trigger the function to display the quote
+  displayRandomQuote();
+</script>
 
 ### 🔝 Top Contributed Repo
 ![](https://github-contributor-stats.vercel.app/api?username=Karthi-1211&limit=5&theme=dark&combine_all_yearly_contributions=true)
